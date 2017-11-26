@@ -1,0 +1,57 @@
+Challenge Description #1
+Your program should accept 2 lists, both lists will have all the same elements 
+(but they don't have to be in the same order) and one number missing from one of the lists.
+No order is guaranteed in the lists. I.E not sorted (but they could be)
+Write a function that takes both lists as arguments returns the missing number.
+Sample input:
+[1,2,5,3,4]
+[2,4,5,1]
+expected output:
+3
+input:
+[5,23,67,111]
+[23, 111, 67]
+expected output:
+5
+
+
+
+
+
+Input : array of integers
+Output : True or False
+Given an array of integers that represent several towers.
+Write a function that returns True/False for if the array is "jumpable".
+A "jumpable" array is one in which you can traverse in one or more jumps. 
+A Tower of height 2 allows you jump up to 2 spaces. A Tower of height 1 allows you to jump 1 space.
+Rules & Limiations:
+==============================
+Use any language you like.
+You can only jump to the right.
+You must be "outside" the array to have jumped over it. - Getting to the last index is not enough.
+You always start at index 0
+Number of jumps doesn't matter. - Doesn't have to be the shortest path through
+You don't need to jump the full distance. eg from a tower of height 3, you can jump 2 space from it.
+Examples:
+==============================
+The array [3,0,2,0,1,1] is jumpable. 
+The array [3,0,2,0,1,0] is not jumpable.
+The array [1,1,2,0,0,0] is not jumpable.
+Explanation of path through array 1:
+==============================
+Start at index 0, value 3
+Jump 2 spaces to index 3 value 2. (you can jump UP to 3, so you can also jump 2)
+Jump 2 spaces to index 5 value 1
+Jump 1 space to the end
+Jump 1 space "out" of the array
+
+
+
+
+
+input> aabbbbbccccd
+output> a2b5c4d
+input> abcddddeeeeee
+output> abcd4e6
+This is a common enough interview question, it can be solved in O(N), i.e. a single pass through the string.
+
